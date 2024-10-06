@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+    <h1>Soulslike</h1>
+
+    {% for soulslike in soulslike_mostrar %}
+    <article>
+        <h2><a href="">{{ soulslike.nombre}}</a> <a href="">{{ soulslike.creador}}</a></h2>
+        <p>{{ soulslike.text|linebreaksbr }}</p>
+        </article>
+    {% endfor %}
+    </body>

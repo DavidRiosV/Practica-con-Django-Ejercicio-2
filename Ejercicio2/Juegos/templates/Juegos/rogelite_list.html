@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+    <h1>Rogelite</h1>
+
+    {% for rogelite in rogelite_mostrar %}
+    <article>
+        <h2><a href="">{{rogelite.nombre}}</a> <a href="">{{rogelite.creador}}</a></h2>
+        <p>{{rogelite.text|linebreaksbr }}</p>
+        </article>
+    {% endfor %}
+    </body>
